@@ -33,10 +33,12 @@ function animate() {
 }
 animate();
 
+// Al hacer clic en la pantalla se abre la carta
 window.addEventListener('click', () => {
   document.getElementById('card').classList.add('active');
 });
 
+// Función para cerrar la carta correctamente
 function cerrarCarta(event) {
   if (event) event.stopPropagation();
   document.getElementById('card').classList.remove('active');
